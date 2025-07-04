@@ -2,6 +2,7 @@
 [2025 학생 특강] R 활용한 데이터분석 (25.01.20월 ~ 01.24금)
 
 ## 다운로드
+- [R source code](http://www.hanbit.co.kr/src/4653)
 - [R 다운로드](https://www.r-project.org/)
 - [RStudio 다운로드](https://posit.co/download/rstudio-desktop)
 
