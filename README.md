@@ -1,6 +1,9 @@
 # 2025-R-DA
 [2025 학생 특강] R 활용한 데이터분석 (25.01.20월 ~ 01.24금)
 
+## 다운로드
+- [R 다운로드](https://www.r-project.org/)
+
 ## 깃허브 데이터 내려받기
 - *.zip 파일 내려받기
 - $ git clone https://github.com/ai7dnn/2025-R-DA.git
