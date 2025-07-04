@@ -26,7 +26,145 @@ R 언어에서 데이터를 다룰 때는 데이터가 **어떤 유형(type)**�
 
 ## 1. 기본 데이터 유형 (원자형 데이터 타입)
 
-... (중략: 실제 전체 응답 내용을 여기에 모두 삽입)
+### Numeric (숫자형)과 Integer (정수형)
+
+```r
+x_num <- 5    # numeric
+x_int <- 5L   # integer
+typeof(x_num)  # "double"
+typeof(x_int)  # "integer"
+```
+
+### Character (문자형)
+
+```r
+name <- "홍길동"
+fruits <- c("Apple", "Banana", "Cherry")
+typeof(name)     # "character"
+length(fruits)   # 3
+```
+
+### Logical (논리형)
+
+```r
+is_raining <- FALSE
+flags <- c(TRUE, TRUE, FALSE, TRUE)
+typeof(is_raining)  # "logical"
+```
+
+### Complex (복소수형)
+
+```r
+z <- 2 + 3i
+typeof(z)        # "complex"
+Re(z); Im(z)
+```
+
+### Raw (Raw 타입)
+
+```r
+raw_vec <- charToRaw("ABC")
+raw_vec        # 41 42 43
+typeof(raw_vec) # "raw"
+```
+
+## 2. 자료 구조 (데이터 구조)
+
+### Vector (벡터)
+
+```r
+nums <- c(10, 20, 30)
+chars <- c("안녕", "Hello")
+bools <- c(TRUE, FALSE, TRUE)
+typeof(chars)
+length(chars)
+class(chars)
+str(chars)
+```
+
+### Factor (팩터)
+
+```r
+survey <- factor(c("Good", "Bad", "Bad", "Good", "Ok"),
+                 levels = c("Bad", "Ok", "Good"))
+survey
+typeof(survey)  # "integer"
+class(survey)   # "factor"
+str(survey)
+```
+
+### List (리스트)
+
+```r
+person <- list(
+  name = "John Doe",
+  age = 29,
+  scores = c(90, 85, 92),
+  passed = TRUE
+)
+str(person)
+```
+
+### Matrix (행렬)
+
+```r
+m1 <- matrix(1:6, nrow=2, ncol=3)
+dim(m1)
+class(m1)
+typeof(m1)
+m1[2, 3]
+```
+
+### Array (배열)
+
+```r
+arr <- array(1:8, dim = c(2, 2, 2))
+arr
+arr[2, 1, 2]
+```
+
+### Data Frame (데이터 프레임)
+
+```r
+names <- c("철수", "영희", "길동")
+ages  <- c(25, 30, 19)
+passed <- c(TRUE, TRUE, FALSE)
+df <- data.frame(Name = names, Age = ages, Passed = passed)
+print(df)
+str(df)
+```
+
+## 3. 데이터 타입 확인 함수
+
+### typeof()
+
+객체의 **저수준 저장 형태**를 알려줍니다.
+
+```r
+typeof(3.14)        # "double"
+typeof("hello")     # "character"
+typeof(TRUE)        # "logical"
+```
+
+### class()
+
+객체의 **클래스(고수준 유형)**을 알려줍니다.
+
+```r
+class(df)           # "data.frame"
+class(m1)           # "matrix"
+class(person)       # "list"
+```
+
+### str()
+
+객체의 **구조 요약**을 보여주는 함수로, 데이터 구조 확인 및 디버깅에 매우 유용합니다.
+
+```r
+str(df)
+str(arr)
+str(person)
+```
 
 ---
 
