@@ -3,7 +3,7 @@
 
 ## 다운로드
 - [R 다운로드](https://www.r-project.org/)
-- [RStudio 다운로드]([https://poisit.co/](https://posit.co/download/rstudio-desktop)
+- [RStudio 다운로드](https://posit.co/download/rstudio-desktop)
 
 ## 깃허브 데이터 내려받기
 - *.zip 파일 내려받기
