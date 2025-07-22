@@ -8,8 +8,10 @@
 - [RStudio 다운로드](https://posit.co/download/rstudio-desktop)
 
 ## 특정 버전 패키지 설치
-- ``` install.packages("https://cran.r-project.org/src/contrib/Archive/arules/arules_1.7-0.tar.gz",
-                 repos = NULL, type = "source") ```
+```
+install.packages("https://cran.r-project.org/src/contrib/Archive/arules/arules_1.7-0.tar.gz",
+                 repos = NULL, type = "source")
+```
 
 ## 깃허브 데이터 내려받기
 - *.zip 파일 내려받기
